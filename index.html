@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>SmartBuyer</title>
+    <meta charset="utf-8"/>
+    <link
+      href="layout/styles/layout.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body id="top">
+    <div class="wrapper row1">
+      <header id="header" class="clear">
+        <div id="logo" class="fl_left">
+          <h1><a href="index.html"><b>SmartBuyer</b></a></h1>
+        </div>
+        <nav id="mainav" class="fl_right">
+          <ul class="clear">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="pages/about-us.html">About Us</a></li>
+            <li><a href="pages/contact-us.html">Contact Us</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+          </ul>        
+        </nav>
+        <!-- ################################################################################################ -->
+      </header>
+    </div>
+   
+    <!-- ################################################################################################ -->
+   
+    <div
+      class="wrapper bgded"
+      style="background-image: url(images/demo/backgrounds/1.png)"
+    >
+      <div class="overlay">
+        <div class="box clear center">
+          <!-- ################################################################################################ -->
+          <h2 class="font_xxl">Compare Your Products Prices</h2>
+          <p class="nospace push50">
+            Compare and get the best and cheapest price with us.
+          </p>
+          <!-- ################################################################################################ -->
+          <div class="container">
+            <input
+              type="text"
+              id="box"
+              placeholder="Search anything..."
+              class="search__box"
+            />
+            <i
+              class="fas fa-search search__icon"
+              id="icon"
+              onclick="toggleShow()"
+            ></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="wrapper row3">
+      <div class="box clear">
+         <ul class="nospace center clear">
+          <li class="one_third first">
+            <div class="product-card" style="border: 2px solid black">
+
+              <!-- First card -->
+
+              <div class="badge"><a href="https://www.flipkart.com/?s_kwcid=AL!739!3!582822043853!e!!g!!flipkart&gclsrc=aw.ds&&semcmpid=sem_8024046704_brand_exe_buyers_goog&gclid=CjwKCAjwrqqSBhBbEiwAlQeqGjQeK6hzR_857SnhxK1DZQEtqV4fjcsAJxx-ZRRhyOs4san0JhzHgRoCq00QAvD_BwE">Visit Flipkart</a></div>
+              <div class="product-tumb">
+                <img src="" alt="Product Pic" />
+              </div>
+              <div class="product-details">
+                <!-- <span class="product-catagory">Women,bag</span> -->
+                <h4><a href="">Women leather bag</a></h4>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+                   
+                    <ul class="clear" id="bnow">
+                      <button type="button">Buy Now</button>
+                    </ul>   
+                   
+                      <!-- <a href=""><i class="fa fa-heart"></i></a> -->
+                    <!-- <a href=""><i class="fa fa-shopping-cart"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="one_third">
+            <div class="product-card" style="border: 2px solid black">
+
+
+              <!-- Second card -->
+
+
+              <div class="badge"><a href="https://www.amazon.in/">Visit Amazon</a></div>
+              <div class="product-tumb">
+                <img src="" alt="Product Pic" />
+              </div>
+              <div class="product-details">
+                <!-- <span class="product-catagory">Women,bag</span> -->
+                <h4><a href="">Women leather bag</a></h4>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+
+                   
+                    
+                    <ul class="clear" id="bnow">
+                      <button type="button">Buy Now</button>
+                    </ul>   
+
+                    <!-- <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="one_third">
+            <div class="product-card" style="border: 2px solid black">
+
+
+              <!-- Third card -->
+
+
+              <div class="badge"><a href="https://www.walmart.com/">Visti Walmart</a></div>
+              <div class="product-tumb">
+                <img src="" alt="Product Pic" />
+              </div>
+              <div class="product-details">
+                <!-- <span class="product-catagory">Women,bag</span> -->
+                <h4><a href="">Women leather bag</a></h4>
+                <div class="product-bottom-details">
+                  <div class="product-price"><small>$96.00</small>$230.99</div>
+                  <div class="product-links">
+                  
+                    <ul class="clear" id="bnow">
+                      <button type="button">Buy Now</button>
+                    </ul>   
+
+
+                    <!-- <a href=""><i class="fa fa-heart"></i></a>
+                    <a href=""><i class="fa fa-shopping-cart"></i></a> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+       </div>
+    </div>
+      <div
+      class="wrapper bgded"
+      style="background-image: url(images/demo/backgrounds/2.png)"
+    >
+      <div class="overlay">
+        <div id="comments" class="box clear">
+           <h2>Get In Contact With Us</h2>
+          <form action="#" method="post">
+            <div class="one_third first">
+              <label for="name">Name <span>*</span></label>
+              <input type="text" name="name" id="name" value="" size="22" />
+            </div>
+            <div class="one_third">
+              <label for="email">Mail <span>*</span></label>
+              <input type="text" name="email" id="email" value="" size="22" />
+            </div>
+            <div class="one_third">
+              <label for="reference">Subject</label>
+              <input
+                type="text"
+                name="reference"
+                id="reference"
+                value=""
+                size="22"
+              />
+            </div>
+            <div class="block clear">
+              <label for="message">Your Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="25"
+                rows="10"
+              ></textarea>
+            </div>
+            <div>
+              <input name="submit" type="submit" value="Submit Form" />
+              &nbsp;
+              <input name="reset" type="reset" value="Reset Form" />
+            </div>
+          </form>
+         </div>
+      </div>
+    </div>
+     <div class="wrapper row3">
+      <main id="container" class="clear">
+        <div class="center clear">
+          <article class="one_quarter first">
+            <img
+              class="pad5 push15 borderedbox"
+              src="images/demo/gallery/akash.jpg"
+              alt=""
+            />
+            <h2 class="nospace push15">Akash Gupta</h2>
+            <p class="nospace push30">
+              JavaScript, HTML, and CSS are the things that I'm most passionate about.I also love handling
+              projects and communicating with my peers for the purpose of clearing out the concepts and 
+              making the understanding of the concepts more crystal clear.
+            </p>
+          </article>
+          <article class="one_quarter">
+            <img
+              class="pad5 push15 borderedbox"
+              src="images/demo/gallery/gku.jpg"
+              alt=""
+            />
+            <h2 class="nospace push15">Gaurav Kumar</h2>
+            <p class="nospace push30">
+              JavaScript, HTML, and CSS are the things that I'm most passionate about.I also love handling
+              projects and communicating with my peers for the purpose of clearing out the concepts and 
+              making the understanding of the concepts more crystal clear.
+            </p>
+          </article>
+          <article class="one_quarter">
+            <img
+              class="pad5 push15 borderedbox"
+              src="images/demo/gallery/gaurav.jpg"
+              alt=""
+            />
+            <h2 class="nospace push15">Gaurav Shukla</h2>
+            <p class="nospace push30">
+              JavaScript, HTML, and CSS are the things that I'm most passionate about.I also love handling
+              projects and communicating with my peers for the purpose of clearing out the concepts and 
+              making the understanding of the concepts more crystal clear.
+            </p>
+          </article>
+          <article class="one_quarter">
+            <img
+              class="pad5 push15 borderedbox"
+              src="images/demo/gallery/rishabh.jpg"
+              alt=""
+            />
+            <h2 class="nospace push15">Rishabh Gupta</h2>
+            <p class="nospace push30">
+              JavaScript, HTML, and CSS are the things that I'm most passionate about.I also love handling
+              projects and communicating with my peers for the purpose of clearing out the concepts and 
+              making the understanding of the concepts more crystal clear.
+            </p>
+          </article>
+        </div>
+        <!-- / container body -->
+        <div class="clear"></div>
+      </main>
+    </div> 
+  </body>
+</html>

@@ -1,0 +1,231 @@
+html {
+    font-size: 62.5%;
+  }
+
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    line-height: inherit;
+    box-sizing: inherit;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    background-color: #ff5e57;
+    line-height: 2;
+  }
+
+  .container {
+    width: 350px;
+    height: auto;
+    background-color: #1e272e;
+    /*   margin: 20vh auto; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 4rem;
+    padding: 10px;
+  }
+
+  .search__box {
+    float: left;
+    width: 0;
+    height: 4rem;
+    /*   display: inline; */
+    background: none;
+    color: #f7f7f7;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    position: relative;
+    opacity: 1;
+    transition: all .75s ease-in;
+    cursor: pointer;
+    /*   border: 2px solid tomato; */
+    /*   margin-top: 5px; */
+  }
+
+  /* .search__box:focus, .search__box:hover {
+background-color: #f1f2f6;
+} */
+
+  .search__icon {
+    box-sizing: border-box;
+    float: right;
+    font-size: 2.5rem;
+    display: inline-block;
+    /*   justify-content: center;
+align-items: center; */
+    margin-left: .8rem;
+    margin-top: 0;
+    cursor: pointer;
+    position: absolute;
+    color: #fa983a;
+    transition: all .25s ease-in;
+    padding: .7rem;
+    border-radius: 50%;
+  }
+
+  #bnow {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 2px;
+    padding-left: 9%;
+    padding-right: 9%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 10px;
+  }
+
+  .container:hover>.search__box {
+    width: 85%;
+    padding: 0 1rem;
+  }
+
+  .container:hover>.search__icon {
+    background-color: #eee;
+  }
+
+  .show {
+    width: 85%;
+    border: 1px solid red;
+    /* ##########################################################################3 */
+    @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .product-card {
+      width: 380px;
+      position: relative;
+      box-shadow: 0 2px 7px #dfdfdf;
+      margin: 50px auto;
+      background: #fafafa;
+
+    }
+
+    .badge {
+      position: absolute;
+      left: 0;
+      top: 20px;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 700;
+      background: red;
+      color: #fff;
+      padding: 3px 10px;
+    }
+
+    .product-tumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 300px;
+      padding: 50px;
+      background: #f0f0f0;
+    }
+
+    .product-tumb img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .product-details {
+      padding: 30px;
+    }
+
+    .product-catagory {
+      display: block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #ccc;
+      margin-bottom: 18px;
+    }
+
+    .product-details h4 a {
+      font-weight: 500;
+      display: block;
+      margin-bottom: 18px;
+      text-transform: uppercase;
+      color: #363636;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .product-details h4 a:hover {
+      color: #fbb72c;
+    }
+
+    .product-details p {
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 18px;
+      color: #999;
+    }
+
+    .product-bottom-details {
+      overflow: hidden;
+      border-top: 1px solid #eee;
+      padding-top: 20px;
+    }
+
+    .product-bottom-details div {
+      float: left;
+      width: 50%;
+    }
+
+    .product-price {
+      font-size: 18px;
+      color: #fbb72c;
+      font-weight: 600;
+    }
+
+    .product-price small {
+      font-size: 80%;
+      font-weight: 400;
+      text-decoration: line-through;
+      display: inline-block;
+      margin-right: 5px;
+    }
+
+    .product-links {
+      text-align: right;
+    }
+
+    .product-links a {
+      display: inline-block;
+      margin-left: 5px;
+      color: #e1e1e1;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+
+    .product-links a:hover {
+      color: #fbb72c;
+    }
